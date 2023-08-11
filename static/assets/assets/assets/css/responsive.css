@@ -1,0 +1,824 @@
+/* if viewport is less than or equals 1200 */
+@media only screen and (max-width:1200px){
+
+    .site-main .about-area .about-title .paras {
+        width: 90% !important;
+    }
+
+    .site-main .site-banner .banner-image{
+        padding-right: 2rem;
+    }
+
+    .site-main .brand-area .paras{
+        width: 90% !important
+    }
+
+    .site-main .services-area{
+        padding-top: 5rem;
+        padding-bottom: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .footer .rights h4{
+        padding: 3rem 15rem;
+    }
+}
+
+/* if viewport is less than or equals 1024px */
+@media only screen and (max-width:1024px){
+
+    .site-main .about-area{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .site-main .about-area .about-title h2 > span {
+        letter-spacing: 10px;
+    }
+
+    .site-main .about-area .about-title .paras {
+        width: 100% !important;
+    }
+
+    .site-main .brand-area{
+        padding: 4rem 2rem;
+    }
+
+    .site-main .brand-area .paras{
+        width: 85% !important
+    }
+
+    .site-main .services-area{
+        padding: 0rem 0rem;
+        padding-bottom: 2rem;
+    }
+
+    .site-main .services-area .services-title{
+        padding: 0rem 2rem;
+    }
+
+    .site-main .services-area .services{
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 13rem;
+        margin: 1rem .5rem;
+        box-shadow:  0 0 15px rgba(33, 33, 33, .2);
+  
+    }
+
+    .site-main .services-area .services:hover{
+        box-shadow: var(--box-shadow) .8s ease;
+    }
+
+    .site-main .services-area .services-list{
+        padding-top: 2rem;
+    }
+
+    .site-main .about-me-area .about-title p{
+        padding: 1rem 5rem;
+    }
+
+    .footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer .rights h4{
+        padding: 1rem 8rem;
+    }
+ 
+}
+
+/* if viewport is less than or equals 991px */
+@media only screen and (max-width:991px){
+    .site-main .site-banner{
+        background-position: center top;
+        padding-right: 0rem;
+        padding-left: 2rem;
+    }
+
+    .site-main .site-banner .site-title{
+        padding-right: 0rem;
+        padding-left: 5rem;
+    }
+
+    .header-area .main-menu .navbar{
+        padding-top: 5%;
+        padding-bottom: 2%;
+        padding-left: 8%;
+        padding-right: 8%;
+        margin: 0%;
+    }
+
+    .site-main .site-banner .banner-image{
+        padding-right: 2rem;
+    }
+
+    .site-main .about-area{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        padding-left: 5rem;
+        padding-right: 4rem;
+    }
+
+    .site-main .about-area .about-image{
+        padding-bottom: 5rem;
+    }
+
+    .site-main .brand-area .experience-area{
+        padding-right: 18rem;
+    }
+
+    .site-main .about-area .about-title h2 > span {
+        font: normal bold 51px/62px var(--font-roboto);
+        letter-spacing: 25px;
+    }
+
+    .site-main .about-area .about-title{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    .site-main .about-area .about-title .paras {
+        width: 80% !important;
+    }
+
+    .site-main .brand-area{
+        padding: 2rem 5rem;
+    }
+
+    .site-main .brand-area .paras{
+        width: 80% !important
+    }
+
+    .site-main .brand-title{
+        padding-bottom: 5rem; 
+    }
+
+    .site-main .services-area{
+        padding: 2rem 1rem;
+    }
+
+    .site-main .services-area .services{
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        margin: 1rem .5rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .site-main .services-area .services-list{
+        padding-left: 0rem;
+        padding-top: 2rem;
+    }
+
+    .site-main .services-area .services{
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        width: 100%;
+        margin: 1rem .5rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .projects-sect{
+        padding-top: 6rem;
+    }
+
+    .projects-sect .main-header h1{
+        font-size: 3rem;
+    }
+
+    .projects-sect .main-header p{
+        font-size: 1.3rem;
+    }
+
+    .project-detail{
+        padding-top: 7rem;
+    }
+
+    .project-detail h3{
+        font: normal bold 35px/45px var(--font-roboto);
+        letter-spacing: 5px;
+    }
+    
+    .project-detail p{
+        font: normal 500 17px/33px var(--font-roboto);
+    }
+}
+
+/* if viewport is less than or equals 900px */
+@media only screen and (max-width:900px){
+
+    .site-main .about-area .about-title .paras {
+        width: 70% !important;
+    }
+
+    .site-main .brand-area .experience-area{
+        padding-right: 10rem;
+    }
+
+    .site-main .brand-area .paras{
+        width: 70% !important
+    }
+
+    .site-main .brand-area{
+        padding: 2rem 4rem;
+    }
+
+    
+    .site-main .about-me-area .about-title p{
+        padding: 1rem 3rem;
+    }
+
+    .footer .rights h4{
+        padding: 1rem 3rem;
+    }
+
+    .footer .container > div{
+        padding: 4rem 1.2rem;
+    }
+
+    .projects-sect .contain .button-group button{
+        font: normal 500 16px/100px var(--font-roboto);
+        text-transform: uppercase;
+    }
+
+    .projects-sect .contain .button-group button{
+        padding-left: 2rem;
+    }
+
+}
+
+@media only screen and (max-width:800px){
+    .projects-sect .contain .card{
+        display: block;
+        padding: 2rem;
+    }
+}
+
+
+/* if viewport is less than or equals 768px */
+@media only screen and (max-width:768px){
+
+    .site-main .site-banner{
+        padding-left: 2rem;
+        padding-right: 0rem;
+    }
+
+    .site-main .site-banner .site-title{
+        padding: 0;
+    }
+
+    .site-main .site-banner .banner-image{
+        padding-left: 0rem;
+        padding-top: 5rem;
+    }
+
+    .site-main .site-banner .banner-image > img{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .site-main .brand-area .experience-area{
+        padding-right: 0;
+    }
+
+    .site-main .about-area{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .site-main .about-area .about-image{
+        padding-bottom: 4rem;
+    }
+
+    .site-main .about-area .about-title{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .site-main .about-area .about-title .paras {
+        width: 80% !important;
+    }
+
+    .site-main .brand-area{
+        padding: 2rem 4rem;
+    }
+
+    .site-main .brand-area .paras{
+        width: 80% !important
+        
+    }
+    
+    .site-main .about-me-area .about-title p{
+        padding: 1rem 1rem;
+    }
+
+    .footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer .rights h4{
+        font-size: 1.2rem;
+        padding: 1rem 5rem;
+    }
+
+    .footer .rights h4 a{
+        font-size: 1.2rem;
+    }
+
+    .projects-sect{
+        padding-top: 5rem;
+    }
+
+    .projects-sect .main-header h1{
+        font-size: 2.5rem;
+    }
+
+    .projects-sect .main-header p{
+        font-size: 1.2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+ 
+    .project-detail .headline{
+        font: normal bold 40px/50px var(--font-roboto);
+    }
+    
+    .project-detail p{
+        font: normal 500 17px/30px var(--font-roboto);
+    }
+
+}
+
+/* if viewport is less than or equals 600px */
+@media only screen and (max-width:600px){
+
+    .header-area .main-menu .navbar{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .site-main .site-banner .banner-image{
+        padding-left: 0rem;
+        padding-right: 3rem;
+        padding-top: 5rem;
+    }
+
+    .site-main .site-banner .banner-image > img{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .site-main .about-area{
+        padding-bottom: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 3rem;
+    }
+
+    .site-main .about-area .about-title{
+        padding-left: 1rem;
+        padding-right: 0rem;
+    }
+
+    .site-main .about-area .about-image{
+        padding-bottom: 5rem;
+    }
+
+    .site-main .about-area .about-title .paras {
+        width: 90% !important;
+    }
+
+    .site-main .brand-area{
+        padding: 2rem 2rem;
+    }
+
+    .site-main .brand-area .paras{
+        width: 90% !important  
+    }
+
+    .site-main .brand-title{
+        padding-bottom: 5rem; 
+    }
+
+    .site-main .about-me-area .about-title p{
+        padding: 1rem 2rem;
+    }
+
+    .footer .rights h4{
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+
+    .footer .rights h4 a{
+        font-size: 1.2rem;
+        padding: 0rem;
+    }
+
+    .footer .container > div{
+        padding: 2rem .9rem;
+    }
+
+    .footer .about-us {
+        padding-bottom: 1rem !important;
+    }
+
+    .footer .newsletter p{
+        font-size: 1rem;
+    }
+
+    .footer .about-us p{
+        font-size: 1rem;
+    }
+
+    .footer .follow p{
+        font-size: 1rem;
+    }
+
+    .footer .container{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .contact-form{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .projects-sect{
+        padding-top: 5rem;
+    }
+
+    .projects-sect .main-header h1{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .projects-sect .contain .button-group button{
+        font: normal 500 16px/60px var(--font-roboto);
+        text-transform: capitalize;
+    }
+
+    .projects-sect .contain .card h3{
+        letter-spacing: 2px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .projects-sect .contain .card p{
+        word-spacing: 3px;
+    }
+
+    .projects-sect .contain .card{
+            padding: 0rem;
+        }
+    
+    .project-detail h3{
+        font: normal bold 30px/35px var(--font-roboto);
+        letter-spacing: 3px;
+    }
+
+    .project-detail p{
+        font: normal 500 16px/27px var(--font-roboto);
+    }
+
+}
+
+/* if viewport is less than or equals 576px */
+@media only screen and (max-width:576px){
+    .project-detail .details-sect{
+        padding: 0rem 3rem !important;
+    }
+}
+
+/* if viewport is less than or equals 480px */
+@media only screen and (max-width:480px){
+
+    /* navabr menu */
+
+    .header-area .main-menu .navbar{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .site-main .site-banner{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .site-main .site-banner .banner-image{
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .site-main .site-banner .banner-image > img{
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+    }
+    
+    .site-main .about-area{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .site-main .about-area .about-image{
+        padding-bottom: 2rem;
+    }
+
+    .site-main .about-area .about-title{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .site-main .about-area .about-title h2 > span {
+        display: block;
+        font: normal bold 40px/50px var(--font-roboto);
+        letter-spacing: 6px;
+    }
+
+    .site-main .brand-area{
+        padding: 1rem 1rem;
+    }
+    
+    .site-main .brand-area .brand-title h2 > span {
+        display: block;
+        font: normal bold 40px/50px var(--font-roboto);
+        letter-spacing: 6px;
+    }
+
+    .site-main .brand-area .paras{
+        width: 90% !important
+        
+    }
+    .site-main .brand-title{
+        padding-bottom: 2rem; 
+    }
+
+    .site-main .services-area .services-title h1{
+        display: block;
+        font: normal bold 36px/47px var(--font-roboto);
+        letter-spacing: 6px;
+    }
+
+    .site-main .services-area .services{
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100%;
+        margin: 1rem .5rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .site-main .project-area .project-title{
+        font: normal bold 36px/47px var(--font-roboto);
+        letter-spacing: 3px;
+    }
+
+    .site-main .project-area .button-group button{
+        font: normal 500 16px/40px var(--font-roboto);
+        text-transform: capitalize;
+    }
+
+    .site-main .project-area .grid .our-project > .title h4{
+        font: normal 700 20px/10px var(--font-roboto);
+    }
+
+    .site-main .about-me-area{
+        padding-top: 2rem;
+    }
+
+    .site-main .about-me-area .about-title p{
+        padding: 1rem 1rem;
+    }
+
+    .site-main .subscribe-us-area .subscribe .send-mail{
+        padding-top: 3rem;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .input-textbox input{
+        width: 100%;
+    }
+    
+    .footer .rights h4{
+        padding: 2rem 1rem;
+    }
+
+    .contact-form{
+        padding-bottom: 3rem;
+    }
+
+    .contact-form .mail-title{
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        
+    }
+
+    .contact-form .parag{
+        font: normal 500 16px/26px var(--font-montserrat);
+        letter-spacing: 0px;
+    }
+
+    .block{
+        width: 70%;
+    }
+
+    .projects-sect{
+        padding-top: 3rem;
+    }
+
+    .projects-sect .main-header h1{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .project-detail .headline{
+        font: normal bold 35px/45px var(--font-roboto);
+    }
+
+    .project-detail h3{
+        font: normal bold 25px/27px var(--font-roboto);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* if viewport is less than or equals 437px */
+@media only screen and (max-width:437px){
+    .site-main .banner-sect{
+        padding-top: 15%;
+   }
+}
+
+/* if viewport is less than or equals 340px */
+@media only screen and (max-width:340px){
+
+    .site-main .site-banner .site-title .site-buttons .first{
+        margin-bottom: 1rem;
+    }
+
+    .footer .rights h4{
+        font-size: 1rem;
+    }
+
+    .footer .container h2{
+        font-size: 20px;
+    }
+
+    .footer .rights h4 a{
+        font-size: 1rem;
+        padding: 4rem;
+    }
+
+    .projects-sect .main-header h1{
+        font-size: 2.2rem;
+    }
+    .projects-sect .main-header p{
+        font-size: 1.1rem;
+    }
+
+    .projects-sect .contain .card p{
+        word-spacing: 0px;
+    }
+
+    .projects-sect .contain .card h3{
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+    .projects-sect .contain .card p{
+        font-size: 16px;
+    }
+
+    .projects-sect .contain .button-group button{
+        padding-left: 10px;
+    }
+}
+
+/* if viewport is less than or equals 334px */
+@media only screen and (max-width:334px){
+    .footer .rights h4 a{
+        padding: 3rem;
+    }
+
+}
+
+/* if viewport is less than or equals 320px */
+@media only screen and (max-width:320px){
+    .footer .rights h4 a{
+        padding: 1rem;
+    }
+}
+
+/* if viewport is less than or equals 300px */
+@media only screen and (max-width:300px){
+    .footer .rights h4{
+        padding: 1rem 0rem;
+    }
+
+    .site-main .site-banner .site-title h1{
+        font-size: 3.8rem;
+    }
+    
+    .site-main .site-banner .site-title h4{
+        font-size: 1.3rem;
+    }
+
+    .site-main .site-banner .site-title h3{
+        font-size: 45px;
+    }
+
+    .site-main .about-area .about-title h2 > span {
+        display: block;
+        font: normal bold 35px/45px var(--font-roboto);
+        letter-spacing: 4px;
+    }
+
+    .site-main .brand-area .brand-title h2 > span {
+        display: block;
+        font: normal bold 35px/45px var(--font-roboto);
+        letter-spacing: 4px;
+    }
+
+    .site-main .project-area .title-h1{
+        font: normal bold 35px/45px var(--font-roboto);
+        letter-spacing: 3px;
+    }
+
+    .site-main .services-area{
+        padding: 2rem 1rem;
+    }
+
+    .site-main .services-area .services{
+        margin: 1rem 0rem;
+    }
+    
+    .site-main .services-area .services-title h1{
+        display: block;
+        font: normal bold 32px/44px var(--font-roboto);
+        letter-spacing: 5px;
+    }
+
+    .site-main .about-me-area .title-h1{
+        font: normal bold 30px/40px var(--font-roboto);
+        letter-spacing: 2px;
+        margin-bottom: 0%;
+    }
+    .site-main .about-me-area .about-title{
+        padding: 0rem;
+    }
+
+    .site-main .about-me-area .about-title p{
+        padding: 1rem 0rem;
+    }
+
+    .site-main .project-area{
+        padding: 2rem 0;
+    }
+
+    .projects-sect{
+        padding-top: 2rem;
+    }
+
+    .projects-sect .main-header h1{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .projects-sect .main-header p{
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* if viewport is less than or equals 278px */
+@media only screen and (max-width:277px){
+    .projects-sect .contain .button-group button{
+        padding-left: 2rem;
+    }
+
+}
+
+/* if viewport is less than or equals 248px */
+@media only screen and (max-width:248px){
+    .footer .rights h4 a{
+        font-size: .8rem;
+    }
+
+}

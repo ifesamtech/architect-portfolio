@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {% block title %}
+        Anixar Architecture
+      {% endblock %}
+    </title>
+    <!-- Bootstrap css file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}">
+
+    <!-- magnific popup css file -->
+    <link rel="stylesheet" href="{% static 'vendor/Magnific-Popup/dist/magnific-popup.css' %}">
+
+    <!-- owl carousel css file -->
+    <link rel="stylesheet" href="{% static 'vendor/owl-carousel/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/owl-carousel/css/owl.theme.default.min.css' %}">
+
+
+    <!-- custom css file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+
+</head>
+<body>
+
+  <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ START HEADER AREA @@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+  <header class="header-area navbar_fixed">
+    <div class="main-menu">
+      <nav class="navbar navbar-expand-lg">
+        <div class="content container-fluid">
+          <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'img/logoarc.jpeg' %}" alt="IfeTech" class="img-flud"></a>
+          <button class="navbar-toggler collapsed d-flex d-lg-none tog-button flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="ms-auto">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'projects' %}">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </li>
+                {% if request.user.is_authenticated %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'add-projects' %}">Add Project</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'add-category' %}">Add Category</a>
+                </li>
+                {% endif %}
+            </ul>  
+            </div>         
+          </div>      
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ END HEADER AREA @@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+  <div>
+    {% block content %}
+    {% endblock %}
+  </div>
+  
+  <!-- ----------------------------------- Footer Area --------------------------------------- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="about-us">
+        <h2>About</h2>
+        <a href="{% url 'about' %}"><p id="#about"> I combine engineering and architecture to design efficient, <br> sustainable and environmentally sensitive buildings...</p></a>
+      </div>
+      <div class="newsletter">
+        <h2>Contact</h2>
+        <p>Please do not hesitate to use the form below if you have any inquiries or interesting projects for me.</p>
+        <div>
+          <a class="btn btn-info" href="{% url 'contact' %}">Contact</a>
+        </div>
+      </div>
+      <div class="instagram">
+        <h2>Instagram</h2>
+        <a href="https://instagram.com/arc_.anixar?igshid=MmU2YjMzNjRlOQ==" target="_blank">
+        <div class="flex-row">
+          <img src="{% static 'images/tee_pix/stairs.jpg' %}" alt="inst-1">
+          <img src="{% static 'images/tee_pix/main.jpg' %}" alt="inst-2">
+          <img src="{% static 'images/tee_pix/ram.jpg' %}" alt="inst-3">
+        </div>
+        </a>
+        <div class="flex-row">
+          <a href="https://instagram.com/arc_.anixar?igshid=MmU2YjMzNjRlOQ==" target="_blank"></a>
+          <img src="{% static 'images/tee_pix/santa-club.jpg' %}" alt="inst-4">
+          <img src="{% static 'images/tee_pix/ketchup.jpg' %}" alt="inst-5">
+          <img src="{% static 'images/tee_pix/seat.jpg' %}" alt="inst-6">
+        </div>
+        </a>
+      </div>
+
+      <div class="follow">
+        <h2>Meet Anixar</h2>
+        <p>Connect with Anixar on social media. Let us stay in touch.</p>
+        <div>
+          <a href="https://www.linkedin.com/in/akani-toyeeb-adesina-075330174" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com/arc_.anixar?igshid=MmU2YjMzNjRlOQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/anixar7?t=tuVkoLNiOyTwpmrLzDKLCw&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100074405302291&mibextid=ZbWKwL" target="blank"><i class="fab fa-facebook"></i></a>
+       </div>
+      </div>
+    </div>
+    
+    <div class="rights flex-row">
+      <h4 class="text-grey">
+        Copyright &copy; 2023 All rights reserved | <a href="https://instagram.com/arc_.anixar?igshid=MmU2YjMzNjRlOQ==" target="_blank"> Arc Anixar <i class="fab fa-instagram"></i> handle</a>
+      </h4>
+    </div>
+
+    <div class="move-up">
+      <span><i class="fa-solid fa-arrow-circle-up fa-2x"></i></span>
+    </div>
+  </footer>
+</div>
+      
+    
+    <!-- jquery js file -->
+    <script src="{% static 'js/jquery3.61.js' %}"></script>
+
+    <!-- Bootstrap js file -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- isotope js library -->
+    <script src="{% static 'vendor/isotope/isotope.min.js' %}"></script>
+
+    <!-- magnific popup script file -->
+    <script src="{% static 'vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js' %}"></script>
+
+    <!-- owl carousel js file -->
+    <script src="{% static 'vendor/owl-carousel/js/owl.carousel.min.js' %}"></script>
+
+    <!-- custom animate.js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- custom animate.js file -->
+    <script src="{% static 'js/animate.js' %}"></script>
+
+    <!-- custom js file -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html> 

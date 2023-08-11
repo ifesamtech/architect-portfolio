@@ -1,0 +1,21 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<section class="container">
+    <div class="inbox-top">
+        <form class="form-control p-5" method="post" action="">
+            {% csrf_token %}
+            {{form|crispy}}
+            <div>
+            <p>Are you sure you want to delete "{{project.name|safe|linebreaksbr}}?"</p>
+            <a class="btn btn-secondary" href="{{ request.META.HTTP_REFERER }}">Cancel</a>
+            <input type="submit" class="btn btn-danger" value="Confirm">
+        </form>
+    </div>
+
+</section>
+
+
+{% endblock %}

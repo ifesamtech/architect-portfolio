@@ -1,0 +1,417 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ START MAIN AREA @@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+<main class="site-main">
+
+  <!-- +++++++++++ banner area ++++++++++++ -->
+  <div class="banner-sect">
+    <section class="site-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 site-title">
+            <h3 class="title-text anim">Hey</h3>
+            <h1 class="title-text text-uppercase anim2">I Am Anixar</h1>
+            <h4 class="title-text text-uppercase anim">Senior Architect & Designer</h4>
+            <div class="site-buttons anim3">
+              <div class="d-flex flex-row flex-wrap">
+                <button type="button" class="btn button primary-button ms-4 text-uppercase first"><a href="{% url 'contact' %}">hire me</a></button>
+                <button type="button" class="btn button secondary-button ms-4 text-uppercase"><a href="{{ cv }}" target="_blank">get cv</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 banner-image">
+            <img class="img-fluid anim" id="banner_jpg" src="{% static 'img/archi/bedroom.jpg' %} " alt="banner-img">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- +++++++++++ end banner area ++++++++++++ -->
+
+  <!-- +++++++++++ start aboutarea ++++++++++++ -->
+  <section class="about-area" id="about">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-between" id="about_area">
+        <div class="col-lg-6 col-md-12 image">
+          <div class="about-image">
+            <img class="img-fluid"  src="{% static 'img/archi/SHOT_2.jpg' %}" alt="about-image" >
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 about-title">
+          <h2 class="text-uppercase">
+            <span>Let me</span>
+            <span class="intro">Introduce</span>
+            <span>Myself</span>
+          </h2>
+          <div class="paragraph w-75 py-3 paras">
+            <p class="para">Looking for an experienced and reliable architect to bring your design visions to life? Look no further! You are in the right place.</p>
+            <p class="para">I combine engineering and architecture to design efficient, sustainable and environmentally sensitive buildings...
+            </p>
+          </div>
+          <div class="about-btn">
+            <button type="button" class="btn button primary-button text-uppercase"><a href="{% url 'about' %}">Know more</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+        
+  <!-- +++++++++++ end aboutarea ++++++++++++ -->
+  <!-- +++++++++++ start brand area ++++++++++++ -->
+
+  <section class="brand-area">
+    <div class="container-fluid">
+    <div class="row" id="brand_area">
+      <div class="col-lg-6 col-md-12">
+        <div class="row brand-title">
+          <h2 class="title-text text-uppercase">
+            <span>Contact</span>
+            <span>Anixar</span>
+          </h2>
+          <div class="paragraph py-3 w-75 paras">
+            <p class="para">How can I be of service? I would love to hear from you. Whether you're curious about a project, a service or you just want to say hello, 
+              Anixar is always at your service. I will answer your questions and we will solve that problem together.</p>
+          </div>
+          <div class="d-sm-flex">
+            <div class="send-mail">
+                <p class="para paras w-75">Have feed back or want to collaborate? Maybe you even want to discuss about those materials you've chosen for your project, I can help you find the information you're looking for.</p>
+                <a href="{% url 'contact' %}" class="btn button secondary-button text-uppercase font-robot">Get in touch</a>
+              </div>  
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="experience-area">
+          <div class="d-flex flex-row years-area">
+            <h2 class="py-4 px-3 years">5</h2>
+            <h2 class="spans">
+              <span>Working</span>
+              <span>Years</span>
+              <span>Experience</span>
+            </h2>
+          </div>
+          <div class="d-flex flex-row flex-wrap call-area">
+            <span><i class="fa fa-envelope fa-3x px-3"></i></span>
+            <div class="call-now">
+              <a href="{% url 'contact' %}" class="primary-color3 text-uppercase font-robot h4">contact me</a>
+              <span class="py-1 font-roboto"><a href="{% url 'contact' %}">I'm only one click away.</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+            
+  <!-- +++++++++++ end brandarea ++++++++++++ -->
+            
+  <!-- +++++++++++ start services area ++++++++++++ -->
+
+  <section class="services-area" id="services">
+  <div class="container">
+    <div id="services_area">
+      <div class="col-lg-12 text-center services-title">
+        <h1 class="text-uppercase title-text">Services Offered</h1>
+        <p class="para">
+          I am for the clients, I am with the clients. <br> And because great home begins with great relationships, I can work with you.
+        </p>
+      </div>
+    </div>
+    <div class="container services-list anim">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="services">
+            <div class="services-image text-center py-4">
+              <img class="image-fluid w-50" src="{% static 'img/icon2/arc4.jpg' %}" alt="Services-1">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title text-uppercase font-roboto">Interior <br> Architecture</h5>
+              <p class="card-text text-secondary">More than simply designing spaces, I will create an entire lifestyle! </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="services">
+            <div class="services-image text-center py-4">
+              <img class="img-fluid w-50" src="{% static 'img/icon2/arc5.jpg' %}" alt="Services-3">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title text-uppercase font-roboto">Project <br> Management</h5>
+              <p class="card-text text-secondary">I will oversee the design and construction process of a building project.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="services">
+            <div class="services-image text-center py-4">
+              <img class="img-fluid w-50" src="{% static 'img/icon2/urban5' %}" alt="Services-2">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title text-uppercase font-roboto">Consultation <br> + CAD Drawings</h5>
+              <p class="card-text text-secondary">I will create architectural drawings with detailed designs. Let me bring your imaginations to life. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="services">
+            <div class="services-image text-center py-4">
+              <img class="img-fluid w-50" src="{% static 'img/arc2.png' %}" alt="Services-4">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title text-uppercase font-roboto">Everything <br> Construction</h5>
+              <p class="card-text text-secondary">I will visit and analyze building sites, get information about design ideas, goals, and stick with you every step of the way.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- +++++++++++ end services area ++++++++++++ -->
+
+  <!-- +++++++++++ start project area ++++++++++++ -->
+
+  <section class="project-area" id="projects">
+  <div class="container">
+    <div class="project-title">
+      <h1 class="text-uppercase title-h1 text-center">A Glimpse</h1>
+    </div>
+    <div class="button-group">
+      <button type="button" class="active" id="btn1">All</button>
+      <button type="button" data-filter=".latest">Latest</button>
+      <button type="button" data-filter=".residential">Residential</button>              
+      <button type="button" data-filter=".timber">Wood</button>              
+      <button type="button" data-filter=".interior">Interior</button>                        
+    </div>
+
+    <div class="row grid">
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item residential">
+        <div class="our-project">
+          <div class="img">
+            <a class="test-popup-link" href="{% static 'img/archi/SHOT_4.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/archi/SHOT_4.jpg' %}" alt="Portfolio-1">
+            </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">Pool View</h4>
+            <span class="text-secondary">Latest, Portfolio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item timber">
+        <div class="our-project">
+          <div class="img">
+            <a class="test-popup-link" href="{% static 'img/archi/Foyer.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/archi/Foyer.jpg' %}" alt="Portfolio-2">
+            </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">Choice Bedroom</h4>
+            <span class="text-secondary">Timber, Portfolio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item residential interior">
+        <div class="our-project">
+          <div class="img">
+            <a class="test-popup-link" href="{% static 'img/archi/kitchen 1.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/archi/kitchen 1.jpg' %}" alt="Portfolio-3">
+            </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">Kitchen Design</h4>
+            <span class="text-secondary">Residential, Portfolio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item interior residential">
+        <div class="our-project">
+          <div class="img">
+            <a class="test-popup-link" href="{% static 'img/archi/bedroom.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/archi/bedroom.jpg' %}" alt="Portfolio-4">
+            </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">Master bedroom</h4>
+            <span class="text-secondary">Interior, Portfolio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item residential">
+        <div class="our-project">
+          <div class="img">
+            <a class="test-popup-link" href="{% static 'images/tee_pix/Lounge shot 6.jpg' %}">
+              <img class="img-fluid" src="{% static 'images/tee_pix/Lounge shot 6.jpg' %}" alt="Portfolio-5">
+            </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">Classic home</h4>
+            <span class="text-secondary">Residential, Portfolio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item interior residential">
+        <div class="our-project">
+          <div class="img">
+            <a class="test-popup-link" href="{% static 'img/archi/Dinning.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/archi/Dinning.jpg' %}" alt="Portfolio-6">
+            </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">Dine & wine</h4>
+            <span class="text-secondary">Residential, Portfolio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item interior residential">
+        <div class="our-project">
+          <div class="img">
+            <a class="test-popup-link" href="{% static 'img/archi/kitchen 3.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/archi/kitchen 3.jpg' %}" alt="Portfolio-7">
+            </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">Kitchen</h4>
+            <span class="text-secondary">Interior, Portfolio</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+        <div class="our-project">
+          <div class="img">
+            <a class="test-popup-link" href="{% static 'img/archi/island details.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/archi/island details.jpg' %}" alt="Portfolio-8">
+            </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">dining top</h4>
+            <span class="text-secondary">Latest, Portfolio</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item latest residential">
+        <div class="our-project">
+          <div class="img">
+            <a class="test-popup-link" href="{% static 'img/archi/front....png' %}">
+              <img class="img-fluid" src="{% static 'img/archi/front....png' %}" alt="Portfolio9">
+            </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">sweet home</h4>
+            <span class="text-secondary">Latest, Portfolio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- +++++++++++ end project area ++++++++++++ -->
+       
+  <!-- +++++++++++ start about me  area ++++++++++++ -->
+
+  <section class="about-me-area">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <div class="about-title">
+          <h1 class="text-uppercase title-h1">What clients say</h1>
+          <p class="para">
+            More than just working relationships, true friendships have been formed with clients and here is what they are saying about Anixar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container carousel py-lg-5">
+    <div class="owl-carousel owl-theme">
+      <div class="client row">
+        <div class="col-lg-4 col-md-12 client-img">
+          <img src="{% static 'images/clients/client1.jpeg' %}" alt="img1" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-12 about-client">
+          <h4 class="text-uppercase">Miss Abigael</h4>
+          <p class="para">
+            "I don't usually do this comment thing but Anixar is worth it! He's got integrity and he is the best at what he does. Honestly, he is the best!"
+          </p>
+        </div>
+      </div>
+      <div class="client row">
+        <div class="col-lg-4 col-md-12 client-img">
+          <img src="{% static 'images/clients/client2.jpeg' %}" alt="img2" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-12 about-client">
+          <h4 class="text-uppercase">Plaud Photography</h4>
+          <p class="para">"Three amazing years and still counting. He always delivers quality work. I highly recommend him."</p>
+        </div>
+      </div>
+      <div class="client row">
+        <div class="col-lg-4 col-md-12 client-img">
+          <img src="{% static 'images/clients/client4.jpeg' %}" alt="img3" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-12 about-client">
+          <h4 class="text-uppercase">Samuel Gideon</h4>
+          <p class="para">"I've known Anixar for over two years now and I have trusted only him to deliver quality jobs ever since! He is very talented and that's why I highly recommend him."</p>
+        </div>
+      </div>
+      <div class="client row">
+        <div class="col-lg-4 col-md-12 client-img">
+          <img src="{% static 'images/clients/client3.jpeg' %}" alt="img4" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-12 about-client">
+          <h4 class="text-uppercase">Mrs Abimbola</h4>
+          <p class="para">"I enjoy working with Anixar because he is loyal, trustworthy and highly skilled. His designs are top-notch!"</p>
+        </div>
+      </div>
+      <div class="client row">
+        <div class="col-lg-4 col-md-12 client-img">
+          <img src="{% static 'images/clients/client5.jpeg' %}" alt="img5" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-12 about-client">
+          <h4 class="text-uppercase">Princess Ololade</h4>
+          <p class="para">"A sincere thanks to you architect because my home was my big dream! I love my new space."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- +++++++++++ end about me area ++++++++++++ -->
+</main>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ END MAIN AREA @@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+{% endblock %}
+    
+<!-- jquery js file -->
+<script src="{% static 'js/jquery3.61.js' %}"></script>
+
+<!-- Bootstrap js file -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+<!-- isotope js library -->
+<script src="{% static 'vendor/isotope/isotope.min.js' %}"></script>
+
+<!-- magnific popup script file -->
+<script src="{% static 'vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js' %}"></script>
+
+<!-- owl carousel js file -->
+<script src="{% static 'vendor/owl-carousel/js/owl.carousel.min.js' %}"></script>
+
+<!-- custom animate.js file -->
+<script src="{% static 'js/animate.js' %}"></script>
+
+<!-- custom js file -->
+<script src="{% static 'js/main.js' %}"></script>

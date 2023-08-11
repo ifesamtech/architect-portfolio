@@ -1,0 +1,40 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+    <!-- Bootstrap css file -->
+
+<div class="container">
+    <div class="send-message">
+        <div class="row mt-5 pt-5">
+            <div class="col-md-6 offset-md-3">
+                {% for message in messages %}
+                <div class="alert alert-success">
+                  {{ message }}
+                </div>
+                {% endfor %}
+                <h3 class="mail-title">Upload Your CV Here...</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <form method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {{ cv_form|crispy }}
+                            <button class="btn btn-secondary btn-block mt-2" type="submit">Upload file</button>
+                        </form>
+                    </div>
+                    {% if url %}
+                    <p class="mx-3">Uploaded file: <a href="{{url}}">{{ url }}</a></p>
+                    {% endif %}
+                </div>
+                <div class="my-5 inline-block">
+                    <i class="fa fa-arrow-left" arial-hidden="true"></i> 
+                    <a class="btn btn-primary" href="{{ request.META.HTTP_REFERER }}">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
