@@ -1,1 +1,1 @@
-web: gunicorn tee_port.wsgi
+web: gunicorn tee_port.wsgi --log-file -

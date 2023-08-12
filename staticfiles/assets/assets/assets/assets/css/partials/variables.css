@@ -1,0 +1,62 @@
+html, body{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: var(--font-roboto);
+}
+/* CSS VARIABLES */
+
+:root{
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --primary-color3: teal;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color: #201f1f17;
+    --border-color2: #1310109c;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+
+    --grad-col: linear-gradient(#a78518, orange, gold);
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    --gradient-color2: linear-gradient(to left, #c2419b, #e63e54, #a78518);
+    --gradient-color: linear-gradient(to left,#f189d2, #a78518);
+    --gradient-color1:linear-gradient(to right, #00FFFF, #e63e54, #a78518);
+    --gradient-color3: linear-gradient(to left,#c2419b, #e63e54);
+    --gradient-color5: linear-gradient(to right,#a881af, #e63e54, #a78518);
+    --bg-gradient1:linear-gradient(to right, #ff512f, #dd2476);
+    --bg-gradient-indigo:linear-gradient(to right, #8e2de2, #4a00e0);
+    --bg-gradient-peach:linear-gradient(to right, #fff7f3, #fff7f3);
+    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+
+    --font-roboto: 'Roboto', cursive;
+
+    --bg-cover: url(../img/archi/bedroom.jpg);
+
+        /* %%%%%%%%%%%%%%%%%  DEFINED FONTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+        --Abel:'Abel',cursive;
+        --Anton:'Anton',cursive;
+        --Livvid:'Livvid',cursive;
+        --Josefin:'Josefin',cursive;
+        --Lexend:'Lexend',cursive;
+        --Livvic:'Livvic',cursive;
+        --Roboto:'Roboto',cursive;
+        --font-roboto:'Roboto', sans-serif, cursive;
+        --Montserrat:'Montserrat',cursive;
+        --font-montserrat:'Montserrat', sans-serif, cursive;
+        --Open_Sans:'Open_Sans',cursive;
+        --font-open_sans: 'Open_Sans', sans-serif, cursive ;
+    
+        /* %%%%%%%%%%%%%%%%% END DEFINED FONTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+}
+
+/* .font-roboto{
+    font-family: var(--font-roboto), cursive;
+} */

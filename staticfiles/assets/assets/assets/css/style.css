@@ -1,0 +1,810 @@
+/* import fonts from fonts.css file */
+@import url(/static/css/fonts.css);
+
+/* css variables */
+@import url(/static/css/partials/variables.css);
+
+/* _global variables */
+@import url(/static/css/partials/global.css);
+
+.anim2{
+    opacity: 0;
+    transform: translateX(20px);
+    animation: shake 0.5 forwards .9s ease-in-out;
+}
+
+@keyframes shake{
+    0%{
+        opacity: 0;
+        transform: rotate(0) translateX(-30px);
+    }
+    76%{
+        transform: rotate(0) translateX(10px);
+        opacity: 2;
+    }
+}
+
+.anim3{
+    opacity: 0;
+    transform: translateX(20px);
+    animation: shakes 0.5 forwards 1s ease;
+}
+
+@keyframes shakes{
+    0%{
+        opacity: 0;
+        transform: rotate(0) translateX(100px);
+    }
+    76%{
+        transform: rotate(0) translateX(0px);
+        opacity: 2;
+    }
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* ====================== start header area ==========================*/
+
+.header-area .main-menu .navbar .navbar-brand img{
+    height: 50px;
+}
+
+.header-area .main-menu .navbar{
+    padding: 1rem 5rem;
+}
+
+.header-area .main-menu .nav-item .nav-link{
+    font: normal 500 13px/2px var(--font-roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+.header-area .main-menu .navbar-nav .active{
+    background: var(--grad-col);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.header-area .main-menu .navbar-nav a:hover{
+    background: var(--grad-col);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* =========================== End Header Area ==============================*/
+
+/*################################ Start Main Area ###############################*/
+
+/* +++++++++++++++ Banner Area +++++++++++++++++ */
+
+.site-main .banner-sect{
+     padding-top: 5%;
+}
+
+.site-main .site-banner{
+    background: url('../img/clothes/cloth2.jpg');
+    background-repeat: no-repeat;
+    background-position:center left;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+ }
+
+.site-main .site-banner .site-title h3::after{
+    content: '';
+    height: 2px;
+    width:18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 4.5rem;
+    animation-delay: 0.5s;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+    animation-delay: 1s;
+}
+
+.site-main .site-banner .banner-image{
+    padding-right: 5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 100%;
+}
+
+.site-main .site-banner .banner-image > img.anim{
+    animation-delay: 1.5s;
+}
+
+.site-main .site-banner .site-title .site-buttons{
+    animation-delay: 1.9s;
+}
+
+.site-main .site-banner .site-title .site-buttons a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* +++++++++++++++ End Banner Area +++++++++++++++++ */
+
+/*################################ start about Area ###############################*/
+
+.site-main .about-area{
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    padding-left: 4rem;
+}
+
+.site-main .about-area .about-title{
+    padding-left: 5rem;
+}
+
+.site-main .about-area .about-title h2 > span {
+    display: block;
+    font: normal bold 49px/60px var(--font-roboto);
+    letter-spacing: 15px;
+}
+
+.site-main .about-area .about-title .paragraph {
+    padding: .5rem 0;
+}
+
+.site-main .about-area .about-title a{
+        color: inherit;
+        text-decoration: none;
+}
+
+/*################################ end about Area ###############################*/
+
+/*################################ start brand Area ###############################*/
+
+.site-main .brand-area{
+    padding: 1rem 5rem;
+}
+
+.site-main .brand-area .brand-title h2 > span {
+    display: block;
+    font: normal bold 49px/60px var(--font-roboto);
+    letter-spacing: 21px;
+}
+
+.site-main .brand-area .brand-title .paragraph > p {
+    padding: .4rem 0;
+}
+
+.site-main .brand-area .experience-area{
+    padding-right: 5rem;
+}
+
+.site-main .brand-area .experience-area span{
+    display: block;
+}
+
+.site-main .brand-area .experience-area .spans{
+    padding-top: 1rem;
+    font-family: var(--font-roboto);
+    font-weight: bold;
+    color: #000;
+}
+
+.site-main .brand-area .experience-area .years-area{
+    background: url("../img/blanks/blank2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+
+.site-main .brand-area .experience-area .years-area .years{
+    font: normal bold 100px/60px var(--font-roboto);
+    color: rgb(2, 56, 56);
+    z-index: 2;
+}
+
+.site-main .brand-area .experience-area .years-area .years h2 > span{
+    font: normal 600 22px/30px var(--font-roboto);
+}
+
+.site-main .brand-area .experience-area .call-area{
+    padding-top: 1rem;
+    color: rgb(2, 56, 56);
+}
+
+.site-main .brand-area .experience-area .call-area a{
+        color: inherit;
+        text-decoration: none;
+}
+
+.site-main .brand-area .experience-area .call-area .call-now{
+    font-family: var(--font-roboto);
+}
+
+/*################################ end Brand Area ###############################*/
+
+
+/*################################ start Services Area ###############################*/
+
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title{
+    padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1{
+    font-size: 35px;
+}
+
+.site-main .services-area .services .card-title{
+    padding-bottom: 1rem;
+}
+
+.site-main .services-area .services{
+    background: white;
+    padding: 2rem 1rem;
+    width: 16rem;
+    margin: 2rem 1rem;
+    transition: box-shadow .8s ease;
+}
+
+.site-main .services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/*################################ end services Area ###############################*/
+
+/*################################ start project Area ###############################*/
+
+.site-main .project-area{
+    padding: 2rem 0;
+}
+
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--font-roboto);
+    text-transform: uppercase;
+}
+
+.button-group button:hover{
+    color: var(--midnight);
+}
+
+.site-main .project-area .our-project a{
+    text-decoration: none;
+    color: var( --primary-color3)
+}
+
+.site-main .project-area .our-project a:hover{
+    color: var(--midnight);
+    text-decoration: underline;
+}
+
+.site-main .project-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--font-roboto);
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.2) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+
+/*################################ end project Area ###############################*/
+
+/*################################start aboutme Area ###############################*/
+
+.site-main .about-me-area{
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.site-main .about-me-area .about-title p{
+    padding: 1rem 14rem;
+}
+
+.site-main .about-me-area .client{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+
+.site-main .about-me-area .client .client-img {
+    padding: 2rem;
+    
+}
+
+.site-main .about-me-area .client .about-client{
+    padding-top: 2rem; 
+}
+
+.site-main .about-me-area .client .about-client h4{
+    font: normal 500 21px/20px var(--font-roboto);  
+}
+
+.site-main .about-me-area .client .about-client p{
+    font-size: 14px;  
+}
+
+.site-main .about-me-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;  
+}
+
+.site-main .about-me-area .owl-carousel .owl-dots .owl-dot .active span{
+   background: var(--primary-color);
+   width: 12px;
+   height: 12px;
+}
+
+/*################################ end aboutme Area ###############################*/
+
+/* -- ----------------------- Footer Section ---------------------------- -- */
+
+.footer{
+    background: var(--bg-color);
+    position: relative;
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+.footer .container h2{
+    color: var(--white);
+}
+
+.footer .newsletter p{
+    font-size: 1.2rem;
+}
+
+.footer .newsletter a{
+    background: var(--white);
+    color: black;
+    font-weight: bold;
+}
+
+.footer .newsletter a:hover{
+    background: var(--midnight);
+    color: whitesmoke;
+}
+
+.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+.footer .about-us a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer .about-us p{
+    font-size: 1.2rem;
+}
+
+.footer .follow div a i{
+    color: var(--white);
+    padding: 0 .4rem;
+}
+
+.footer .follow div a i:hover{
+    color: var(--midnight);
+}
+
+.footer .follow p{
+    font-size: 1.2rem;
+}
+
+.footer .rights{
+    margin:0 1rem;
+}
+
+.footer .rights h4{
+    padding: 3rem 25rem;
+}
+
+.footer .rights h4 a{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+.footer .rights h4 a:hover{
+    color: var(--midnight);
+}
+
+.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+.footer .move-up span{
+    color: var(--white);
+}
+
+.footer .move-up span:hover{
+    color: var(--midnight);
+    cursor: pointer;
+}
+/* -- ------@-----------------End Footer Section ---------------------@------- -- */
+
+.scroll-down header{
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header{
+    filter: drop-shadow(0 -10px 20px rgb(170,170,170));
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ADD PROJECT SECTION %%%%%%%%%%%%%%%%%%%%%% */
+.add-project{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ADD PROJECT SECTION %%%%%%%%%%%%%%%%%%%%%% */
+.contact-form{
+    font-family: var(--font-montserrat);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.contact-form .mail-title{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    
+}
+
+.contact-form .parag{
+    font: normal 500 17px/30px var(--font-montserrat);
+    letter-spacing: 1px;
+}
+
+.parags{
+    font: normal 500 18px/30px var(--font-montserrat);
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    width: 100%;
+    text-align: justify;
+    text-justify: auto;
+}
+
+.tops{
+    font: normal bold 35px/45px var(--font-montserrat);
+    letter-spacing: 3px;
+}
+
+.about-anixar{
+    font-family: var(--font-montserrat);
+    margin-bottom: 5rem;
+}
+
+.about-anixar .sect{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.about-anixar .sect .proj img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    margin-bottom: 0;
+    /* padding-right: 18rem; */
+}
+
+.about-anixar .sect .proj{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.about-anixar .sect .proj::after{
+    content: "";
+    background-image: var(--bg-cover);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.about-anixar .sect .proj .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: white;
+}
+
+.creativity{
+    padding-bottom: 20px;
+}
+
+.creativity .design{
+    color: #b50d10;
+    font-weight: bold;
+}
+.creativity .story{
+    color: #d46904;
+    font-weight: bold;
+}
+
+.anixar{
+    padding-top: 2rem;
+    padding-bottom: 20px;
+}
+
+.anixar .get-cv{
+    background: transparent;
+    color: black;
+    border-color: #d46904;
+    font-weight: bold;
+}
+
+.anixar .get-cv:hover{
+    background: black;
+    color: whitesmoke;
+    border-color: transparent;
+    font-weight: bold;
+}
+
+.skill{
+    margin-top: 2rem;
+    padding-bottom: 20px;
+
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.block > span{
+    
+    padding: 5px;
+    border: 1px solid;
+    border-color: #b50d10;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.projects-sect{
+    font-family: var(--font-roboto);
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.projects-sect .contain .card a{
+    text-decoration: none;
+    color: whitesmoke;
+    background: black;
+    font-family: var(--font-roboto);
+    font-size: 1.1rem;
+}
+
+.projects-sect .contain .card a:hover{
+    color: black;
+    background: white;
+    font-weight: bold;
+}
+
+.btnz{
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+.projects-sect .contain{
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+.projects-sect .main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.projects-sect .main-header h1{
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.projects-sect .main-header h1 span{
+    color: #b50d10;
+}
+
+.projects-sect .contain .button-group{
+    margin-bottom: 2rem;
+}
+
+.projects-sect .contain .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--font-roboto);
+    text-transform: uppercase;
+}
+
+.projects-sect .contain .button-group a{
+    text-decoration: none;
+    color: black;
+}
+.projects-sect .contain .button-group a:hover{
+    text-decoration: underline;
+    color: #b50d10;
+}
+
+.projects-sect .contain .button-group button{
+    padding-left: 3rem;
+}
+
+.projects-sect .main-header p{
+    font-size: 1.5rem;
+}
+
+.projects-sect .contain .card img{
+    width: 100%;
+}
+
+.projects-sect .contain .card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: white;
+    margin-bottom: 3rem;
+}
+
+.projects-sect .contain .card h3{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.projects-sect .contain .card p{
+    font-size: 1rem;
+    word-spacing: 5px;
+}
+
+.projects-sect .contain .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.projects-sect .contain .card > div{
+    padding: 2rem;
+}
+
+.projects-sect .contain .card:nth-child(even) img{
+    order: 2;
+}
+
+/* CONTINUE FROM HERE */
+
+.project-detail{
+    font-family: var(--font-roboto);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.project-detail .sect{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-detail .proj img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-detail .headline{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    font: normal bold 45px/55px var(--font-roboto);
+    transform: translate(0%, -70%);
+    color: white;
+    z-index: 999;
+}
+
+.project-detail .sect .proj{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.project-detail .sect .proj::after{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+}
+
+.project-detail .sect .proj .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(218, 231, 236);
+    z-index: 999;
+}
+
+.project-detail h3{
+    font: normal bold 40px/50px var(--font-roboto);
+    letter-spacing: 7px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.project-detail p{
+    font: normal 500 18px/35px var(--font-roboto);
+    text-align: justify;
+    text-justify: auto;
+}

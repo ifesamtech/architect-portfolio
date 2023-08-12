@@ -1,0 +1,46 @@
+/* @font-face */
+
+@font-face{
+    font-family: Roboto;
+    src: url(/static/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: Montserrat;
+    src: url(/static/fonts/Montserrat/static/Montserrat-Regular.tt);
+}
+
+@font-face{
+    font-family: Open_Sans;
+    src: url(/static/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face{
+    font-family: Abel;
+    src: url(/static/fonts/Abel/Abel-Regular.ttf);
+}
+
+@font-face{
+    font-family: Anton;
+    src: url(/static/fonts/Anton/Anton-Regular.ttf);
+}
+
+@font-face{
+    font-family: Josefin;
+    src: url(/static/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf);
+}
+
+@font-face{
+    font-family: Lexend_Deca;
+    src: url(/static/fonts/Lexend_Deca/static/LexendDeca-Regular.ttf);
+}
+
+@font-face{
+    font-family: Livvic;
+    src: url(/static/fonts/Livvic/Livvic-Regular.ttf);
+}
+
+@font-face{
+    font-family: Poppins;
+    src: url(/static/fonts/Poppins/Poppins-Regular.ttf);
+}
